@@ -1,0 +1,35 @@
+div ~ h1{
+
+    background-color: lightblue;
+}
+
+p::before{
+    content: "Note: ";
+    font-weight: bold;
+}
+p::after{
+    content: "🥭";
+    font-style: italic;
+}
+h1::after{
+
+    content: "!!";
+    font-style: italic;
+}
+h1::before{
+    content: "Important: ";
+    font-weight: bold;
+}
+input[type="text"]{
+    background-color: rgb=(0,0,255);
+    border: 2px solid green;
+}
+
+/* + adjacent sibling
+> child selector
+~ general sibling
+:: pseudo element */
+h1,p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}

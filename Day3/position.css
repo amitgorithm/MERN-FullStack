@@ -1,0 +1,55 @@
+body {
+    background: lightseagreen;
+    height: 200vh;
+}
+.parent {
+    border: 3px solid red;
+    height: 500px;
+    width: 300px;
+    /* margin-left: 200px; */
+}
+.child-1 {
+    background: yellow;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 20px;
+    
+    
+    /* position : fixed;  */
+     /* position: absolute;  */
+     /* position: sticky; */
+     position: relative;
+     
+     z-index: 15;
+   
+}
+.child-2 {
+    background: blue;
+    height: 100px;
+    width: 100px;
+    left: 100px;
+    top: 50px;
+    /* margin-left: 80px; */
+    /* position: absolute; */
+    position: sticky;
+    /* position: relative; */
+    z-index:12;
+}
+.child-3 {
+    background: green;
+    height: 100px;
+    width: 100px;
+    left: 100px;
+    top: 80px;
+    /* position: absolute; */
+    position : sticky;
+    /* position: relative; */
+    z-index: 10;
+}
+
+
+
+/* default : static, absolute, relative, fixed, sticky 
+left right top bottom z index  */
+/* x ---- y |||| z back and forth */

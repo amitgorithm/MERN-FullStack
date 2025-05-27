@@ -1,0 +1,25 @@
+*{
+    background: lightpink
+}
+h2 {
+    color: blue;
+    text-align: right;
+}
+span {
+    background-color: aqua;
+}
+.bar {
+    padding: 10px;
+    transition: 2s;
+}
+.bar:hover {
+    background-color: yellow;
+    color: red;
+    transform: scale(1.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}

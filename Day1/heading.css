@@ -1,0 +1,29 @@
+*{
+    background: lightblue;
+
+}
+#a {
+    background: red;
+}
+.Z {
+    text-align: center;
+    background: yellow;
+    color: red;
+    font-family :fantasy
+}
+h2 {
+    font-family: cursive;
+    font-weight: bolder;
+}
+/* 
+ids are unique == #
+classes can be used multiple times == . */
+.A {
+    background: green;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+
+}

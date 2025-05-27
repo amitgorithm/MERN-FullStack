@@ -1,0 +1,32 @@
+
+#a {
+    margin-left: 40%;
+}
+#b {
+    margin-left: 40%;
+}
+h1 {
+    color:red;
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 1; */
+    
+}
+p {
+    background:black;
+    color: yellow;
+    text-align: center;
+    transition: 4s;
+    border-radius: 40px;
+}
+div{ 
+    height:80px;
+    background-color: lightblue;
+}
+p:hover {
+    cursor: pointer;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    border-radius: 80px;
+}

@@ -1,0 +1,37 @@
+body {
+    background: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.box {
+    height: 150px;
+    width:150px;
+    background: darkblue;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    animation: mern 10s infinite;
+}
+@keyframes mern {
+    0% {
+        transform: translateX(0) skew(0deg, 0deg);
+    }
+    25% {
+        transform: translateX(100px) skew(10deg, 5deg);
+        background: yellow;
+    }
+    50% {
+        transform: translateX(100px) skew(40deg, 5deg);
+    }
+    75% {
+        transform: translateX(100px) skew(50deg, 5deg);
+        background: red;
+    }
+    100% {
+        transform: translateX(100px) skew(80deg, 5deg);
+    }
+}
