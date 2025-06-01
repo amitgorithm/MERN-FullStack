@@ -1,0 +1,11 @@
+body {
+    background : lightgrey;
+}
+h1 {
+    background: green;
+    color: white;
+    text-align: center;
+}
+button:hover {
+    background: lightgreen;
+}

@@ -23,3 +23,10 @@ li {
 li:hover ul.drop {
     display: block;
 }
+.engdrop {  
+    position: absolute;
+    display: none;
+}
+#eng:hover ul.engdrop {
+    display: block;
+}

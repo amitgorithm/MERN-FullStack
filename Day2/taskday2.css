@@ -23,7 +23,7 @@ div{
     height:80px;
     background-color: lightblue;
 }
-p:hover {
+#Z:hover {
     cursor: pointer;
     font-size: 60px;
     text-decoration: underline;

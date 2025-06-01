@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> The user data is : </h1>
+    <input type="text" id="name" placeholder="send msg"><br><br>
+
+    <script>
+        let data = document.querySelector('input')
+        console.log(data);
+        let msg = document.querySelector('h1')
+        let ogMsg = document.querySelector('h1').textContent;  
+        //OR
+        // let ogMsg = msg.textContent;
+
+        data.addEventListener('input',()=>{
+            console.log(data.value);
+            // msg.textContent = "The user data is : " + data.value;
+            // msg.textContent = data.value 
+            // msg.textContent = ogMsg + " " + data.value;
+            //OR
+            msg.textContent = ogMsg + data.value;
+
+        })
+
+    </script>
+</body>
+</html>

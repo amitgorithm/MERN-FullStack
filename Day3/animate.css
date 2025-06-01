@@ -1,12 +1,12 @@
 body {
-    background: lightsteelblue;
+    background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     height:100vh;
 }
 .box {
-    height: 150px;
+    height: 200px;
     width:150px;
     background: darkblue;
     color: azure;
@@ -14,24 +14,24 @@ body {
     justify-content: center;
     align-items: center;
     font-family: cursive;
-    animation: mern 10s infinite;
+    animation: mern 2s infinite;;
 }
 @keyframes mern {
     0% {
-        transform: translateX(0) skew(0deg, 0deg);
+        transform: translateY(0) skew(0deg, 0deg);
     }
     25% {
-        transform: translateX(100px) skew(10deg, 5deg);
-        background: yellow;
+        transform: translateY(100px) skew(10deg, 5deg);
+        background:white;;
     }
     50% {
-        transform: translateX(100px) skew(40deg, 5deg);
+        transform: translateY(100px) skew(40deg, 5deg);
     }
     75% {
-        transform: translateX(100px) skew(50deg, 5deg);
+        transform: translateY(100px) skew(50deg, 5deg);
         background: red;
     }
     100% {
-        transform: translateX(100px) skew(80deg, 5deg);
+        transform: translateY(100px) skew(80deg, 5deg);
     }
 }
