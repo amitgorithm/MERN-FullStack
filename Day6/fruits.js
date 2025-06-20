@@ -1,4 +1,6 @@
-const fruits = ["🍒","🥭", "🍒","🥭","🍒","🍎","🥭","🍎","🍎","🥭"  ]
+
+
+const fruits = ["🍒","🥭", "🍒","🥭","🍒","🍎","🥭","🍎","🍎","🥭", "🍊"  ]
 
 // if else for loop
 
@@ -12,7 +14,7 @@ for(i=0;i<fruits.length;i++)
         document.getElementById('c').textContent += "🍒"
     } else if(fruits[i] == "🥭"){
         document.getElementById('a').textContent += "🥭"
-    }
+    } 
 
 
 

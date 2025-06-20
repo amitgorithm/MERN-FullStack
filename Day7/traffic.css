@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#main{
+  height:300px;
+  background: black;
+  width: 140px;
+  margin-left: 45%;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top:20px;
+
+
+}
+#red{
+  width: 80px;
+  height:80px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+}
+#yellow{
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  margin-left: 10px;
+
+  margin-bottom: 15px;
+
+}
+#green{
+  width: 80px;
+  height:80px;
+  background: green;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+}
+
+
