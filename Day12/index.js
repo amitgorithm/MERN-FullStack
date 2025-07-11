@@ -11,7 +11,7 @@ app.use(express.json())
 // this is schema
 const xyz = mongoose.model('student', { 
   name: String, 
-  age: Number 
+  age: {type : Number, required : true }
 }); 
 
 
@@ -55,11 +55,15 @@ app.get('/students/:id', (req,res) => {
 
 
 // create student
-app.post("/students",(req,res) =>{
+app.post("/students", async (req,res) =>{
+  try{
   console.log("The Data is: ", req.body);
   const ss = new xyz(req.body)
-  ss.save()
-        .then(data => res.send(data))
+  const data = await ss.save()
+        res.send(data);
+  } catch(err) {
+    res.send("error", err.message)
+  }
 })
 
 // dynamic routing
