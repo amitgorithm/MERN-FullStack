@@ -8,7 +8,11 @@ mongoose.connect("mongodb://127.0.0.1:27017/abcd");
 //middleware
 app.use(express.json())
 
-const xyz = mongoose.model('student', { name: String, age: Number }); // this is schema
+// this is schema
+const xyz = mongoose.model('student', { 
+  name: String, 
+  age: Number 
+}); 
 
 
 
@@ -34,9 +38,17 @@ app.get("/contact",(req,res)=>{
 
 // get all students list
 app.get("/students",(req,res)=>{
+    
     xyz.find()
           .then(data => res.send(data))
+          .catch(err => console.error(err));
           
+})
+// find a student
+app.get('/students/:id', (req,res) => {
+  console.log("The id is : ", req.params.id);
+  xyz.findById(req.params.id)
+      .then(data => res.send(data));
 })
 
 
@@ -44,6 +56,7 @@ app.get("/students",(req,res)=>{
 
 // create student
 app.post("/students",(req,res) =>{
+  console.log("The Data is: ", req.body);
   const ss = new xyz(req.body)
   ss.save()
         .then(data => res.send(data))
@@ -53,6 +66,21 @@ app.post("/students",(req,res) =>{
 app.get('/hello/:id',(req,res)=>{
   res.send(`The usersid is : ${req.params.id}`)
 })
+
+// update student
+app.put('/students/:id', (req, res) => {
+  xyz.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then(data => {
+      if (!data) {
+        return res.status(404).send("Student not found");
+      }
+      res.send(data);
+    })
+    .catch(err => {
+      console.error("Error in PUT /students/:id", err); // <-- debug output
+      res.status(500).send("Server error: " + err.message);
+    });
+});
 
 // delete student
 app.delete("/students/:id", (req,res) =>{
